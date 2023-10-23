@@ -10,7 +10,7 @@ submitBtn.addEventListener("click", function() {
   var BMI = BMIcalculator(input1Value, input2Value);
 
   // Perform actions with the collected data
-  var result = "Your BMI is = " + BMI + "kg/m" + <sup>2</sup>;
+  var result = "Your BMI is = " + BMI + " kg/m<sup>2</sup>";
 
   // Display the result
   resultDiv.innerHTML = result;
@@ -22,8 +22,3 @@ function BMIcalculator(height, weight) {
     var BMIformula = weight / Math.pow(height, 2);
     return Math.round(BMIformula);
 }
-
-
-
-
-
